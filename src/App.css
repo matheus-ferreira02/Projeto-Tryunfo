@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap') ;
+
+* {
+  box-sizing: border-box;
+  font-family: Inter , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.new_card {
+  display: flex;
+  flex-direction: column;
+}
+
+.add_new_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 90vh;
+}
+
+.add_new_card h1 {
+  color: #444955;
+  font-weight: 600;
+  padding: 20px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.preview {
+  background-color: #023031;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.formCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.formCard input, textarea {
+  border: none;
+  border-bottom: 1px solid #023031;
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+.input_image input {
+  left: 32px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 92.5%;
+}
+
+.formCard label:nth-last-child( 2 ) input {
+  margin: 0 5px 10px 0;
+  width: 5%;
+}
+
+.formCard label, .filter label {
+  color: #444955;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.formCard textarea {
+  resize: none;
+}
+
+.validation, .remaining_pts {
+  font-size: 0.8em;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.validation {
+  color: red;
+}
+
+.remaining_pts {
+  color: green;
+}
+
+img {
+  width: 100px;
+}
+
+.input_image {
+  margin-bottom: 55px;
+  position: relative;
+}
+
+.input_image i {
+  background-color: #023031;
+  color: white;
+  padding: 8.5px 8px;
+  position: absolute;
+  top: 25px;
+}
+
+.formCard select, .filter select {
+  background-color: #024647;
+  border: none;
+  border-radius: 3px;
+  color: #fafafa;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: 4px;
+}
+
+.submit_btn {
+  background-color: #024647;
+  border: none;
+  border-radius: 3px;
+  color: #fafafa;
+  padding: 7px 0;
+}
+
+.submit_btn:disabled {
+  background-color: #02464760;
+}
+
+.text_validation {
+  color: #444955;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 5px 0 6px;
+  padding: 0;
+}
+
+.preview h1, .cards h1 {
+  color: #fafafa;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.card {
+  align-items: flex-start;
+  background-color: #036b52;
+  border: 10px solid #fafafa;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 30px;
+  padding: 0 15px;
+  position: relative;
+  width: 90%;
+}
+
+.card h1 {
+  background-color: #024647;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 20px;
+  margin: 20px 0 0;
+  min-height: 30px;
+  padding: 5px 10px;
+  text-align: right;
+  width: 100%;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card img {
+  background-color: rgb(153, 150, 150);
+  background-image: url('components/super-trunfo-logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 250px;
+  width: 100%;
+}
+
+.desc {
+  color: #fafafa;
+  font-size: 0.7em;
+  font-weight: 300;
+  margin: 10px 0 -10px 5px;
+  min-height: 50px;
+  text-align: left;
+}
+
+.div-white {
+  background-color: #fafafa;
+  border-radius: 10px;
+  color: #023031;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.div-white span {
+  color: #024647;
+  text-align: right;
+}
+
+.attr-text li {
+  background-color: #f0f2f5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  padding: 5px 0;
+}
+
+.cards .card {
+  border: 10px solid #fafafa;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin-bottom: 50px;
+}
+
+.card .attr li {
+  background-color: #024647;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.rare {
+  margin: 10px 5px;
+  text-align: left;
+}
+
+.super-trunfo {
+  align-items: center;
+  background-color: red;
+  border: 3px dashed #d3cece;
+  border-radius: 50%;
+  color: #fafafa;
+  display: flex;
+  font-size: 0.7em;
+  height: 65px;
+  padding: 1em;
+  position: absolute;
+  right: 40px;
+  top: 220px;
+  width: 65px;
+}
+
+.all-cards h1 {
+  color: #444955;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.all-cards {
+  padding: 20px;
+}
+
+.filter {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 30vh;
+  padding: 10px;
+}
+
+.filter h3 {
+  color: #444955;
+  font-weight: 600;
+}
+
+.filter label:nth-child( 2 ) input {
+  border: 1px solid #424753;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+.filter label:nth-child( 4 ) input {
+  margin-right: 5px;
+}
+
+.filter label {
+  font-size: 0.9em;
+}
+
+.cards button {
+  background-color: #fafafa;
+  border: 1px solid #024647;
+  bottom: -45px;
+  color: #024647;
+  left: 50%;
+  padding: 5px 15px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.cards button:hover {
+  background-color: #024647;
+  color: #fafafa;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+@media only screen and ( min-width : 600px ) {
+
+  .new_card { width: 100%; }
+
+  .formCard {
+    display: flex;
+    width: 90%;
+  }
+
+  .formCard label, .filter label {
+    font-size: 1.5em;
+  }
+
+  .formCard input, textarea {
+    font-size: 0.9em;
+  }
+
+  .add_new_card h1, .preview h1, .cards h1, .all-cards h1 {
+    font-size: 2.5em;
+  }
+
+  .remaining_pts, .validation, .super-trunfo {
+    font-size: 1em;
+  }
+
+  .input_image input {
+    left: 40px;
+    top: 26px;
+    width: 92.5%;
+  }
+
+  .input_image i {
+    font-size: 1.55em;
+    top: 32px;
+  }
+
+  .formCard select, .filter select, .filter:nth-child( 2 ) input {
+    font-size: 0.9em;
+  }
+
+  .submit_btn, .desc {
+    font-size: 1.2em;
+  }
+
+  .cards .card {
+    margin-bottom: 100px;
+  }
+
+  .card h1 {
+    min-height: 60px;
+  }
+
+  .card img {
+    height: 400px;
+  }
+
+  .attr-text li, .rare {
+    font-size: 1.3em;
+  }
+
+  .super-trunfo {
+    height: 100px;
+    right: 80px;
+    top: 350px;
+    width: 100px;
+  }
+
+  .cards button {
+    bottom: -70px;
+    padding: 10px 30px;
+  }
+}
+
+@media only screen and ( min-width : 768px ) {
+
+  .input_image input {
+    width: 95%;
+  }
+
+  .card {
+    width: 69%;
+  }
+
+  .card img {
+    height: 500px;
+  }
+
+  .cards .card {
+    width: 70%;
+  }
+}
+
+@media only screen and ( min-width : 992px ) {
+
+  .new_card {
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -20px;
+    width: 100%;
+  }
+
+  .add_new_card {
+    width: 100%;
+  }
+
+  .preview {
+    min-height: 885px;
+    width: 100%;
+  }
+
+  .input_image input {
+    width: 92%;
+  }
+
+  .card {
+    height: 650px;
+    margin-top: 6.5%;
+    width: 75%;
+  }
+
+  .card h1 {
+    font-size: 1.5em;
+    min-height: 40px;
+  }
+
+  .card img {
+    height: 300px;
+  }
+
+  .super-trunfo {
+    height: 80px;
+    right: 60px;
+    top: 250px;
+    width: 80px;
+  }
+
+  .cards .card {
+    width: 40%;
+  }
+
+  .text_validation {
+    font-size: 1.3em;
+  }
+
+  .filter label:nth-child( 2 ) input {
+    width: 50%;
+  }
+}
+
+@media only screen and ( min-width : 1200px ) {
+
+  .input_image input {
+    width: 92.5%;
+  }
+
+  .new_card {
+    margin-top: -20px;
+  }
+
+  .card {
+    margin-top: 8%;
+  }
+
+  .all-cards {
+    padding: 0 20px;
+    width: 40%;
+  }
+
+  .filter_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .cards {
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .cards .card {
+    width: 40%;
+  }
+
+  .filter label:nth-child( 2 ) input {
+    width: 100%;
+  }
+}
+
+@media only screen and ( min-width : 1920px ) {
+
+  .formCard {
+    width: 60%;
+  }
+
+  .new_card {
+    margin-top: -20px;
+  }
+
+  .card {
+    height: 680px;
+    margin-top: 3%;
+    width: 50%;
+  }
+
+  .cards .card {
+    margin-bottom: 100px;
+    width: 30%;
+  }
+
+  .card h1 {
+    min-height: 40px;
+  }
+
+  .card img {
+    height: 350px;
+  }
+
+  .super-trunfo {
+    height: 100px;
+    right: 60px;
+    top: 280px;
+    width: 100px;
+  }
+}
